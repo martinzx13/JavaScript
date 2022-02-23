@@ -1,0 +1,111 @@
+<style>
+  
+  body {
+    color: whitesmoke;
+    display: grid;
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg');
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+      sans-serif;
+  }
+  #title {
+    font-weight: bold;
+  }
+  header {
+    display: grid;
+    text-align: center;
+  }
+  #survey-form {
+    display: grid;
+    background: #0c135f;
+    grid-template-columns: auto;
+  }
+</style>
+<body>
+  <div id="main">
+    <header>
+      <h1 id="title">FreeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+    </header>
+    <form id="survey-form" action="">
+      <!--            Normal input for the form           -->
+      <label id="name-label" for="">Name</label>
+      <input id="name" type="text" placeholder="Rinita Alcachofa" required />
+      <label id="email-label" for="email">Email</label>
+      <input id="email" type="email" placeholder="Rina@example.com" required />
+      <label id="number-label" for="">Age (optional)</label>
+      <input id="number" type="number" placeholder="24" min="13" max="100" />
+
+      <!--            option input for the form           -->
+      <label for=""> Which option best describes your current role? </label>
+      <select name="" id="dropdown">
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="unemployed">Unemployed</option>
+        <option value="other">other</option>
+      </select>
+
+      <!--            option input for the form           -->
+      <!-- <label for=""> Would you recommend freeCodeCamp to a friend? </label> -->
+      <input value="definitely" type="radio" name="html" />
+      <label for="html">Definitely</label>
+      <input value="Maybe" type="radio" name="html" />
+      <label for="html">Maybe</label>
+      <input value="not-sure" type="radio" name="html" />
+      <label for="html">Not sure</label>
+      <!-- 
+      option whith a selection -->
+
+      <label for="selection"
+        >What is your favorite ferature of free freeCodeCamp</label
+      >
+      <select>
+        <option value="">Challenges</option>
+        <option value="">Projects</option>
+        <option value="">Community</option>
+        <option value="">Open Source</option>
+      </select>
+
+      <label for=""
+        >What woul you like to see improve (check all that apply)</label
+      >
+      <input type="checkbox" value="checkbox" />
+      <label>Back-end Projects</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Front end proyects</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Data Visualization </label>
+      <input type="checkbox" value="checkbox" />
+      <label>Challenges</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Gitter help rooms </label>
+      <input type="checkbox" value="checkbox" />
+      <label>videos</label>
+      <input type="checkbox" value="checkbox" />
+      <label>City Meetups</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Wiki</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Forum</label>
+      <input type="checkbox" value="checkbox" />
+      <label>Additional Courses</label>
+
+      <!-- _____________________ Final Coment_______________________ -->
+      <div>
+        <p>Any comments or sugestions so far?</p>
+        <textarea
+          id="comment"
+          name="comment"
+          class="input-textarea"
+          placeholder="Enter Your comment here.."
+        ></textarea>
+      </div>
+      <div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </div>
+</body>
